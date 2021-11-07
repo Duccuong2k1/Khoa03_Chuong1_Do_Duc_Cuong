@@ -45,7 +45,7 @@ class FormSignUp extends Component {
 		}
         // check phoneNumber
         if(name === 'phoneNumber'){
-            const regexPhone = /([\+84|84|0]+(3|5|7|8|9|1[2|6|8|9]))+([0-9]{8})\b/
+            const regexPhone = /([+84|84|0]+(3|5|7|8|9|1[2|6|8|9]))+([0-9]{8})\b/
             if(!regexPhone.test(value)){
                 newErrors[name] = name + ' chưa đúng định dạng'
 			}else{
